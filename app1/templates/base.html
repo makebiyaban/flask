@@ -11,8 +11,8 @@ wellcome to my site
 </head>
 <body>
 <div>
-mysite: <a href="/index">Home </a>
-<a href="/login"> sign in</a>
+mysite: <a href="{{ url_for("index")}}">Home</a>
+<a href="{{ url_for("login")}}">Sign in</a>
 </div>
 <hr>
 {% with messages= get_flashed_messages() %}
